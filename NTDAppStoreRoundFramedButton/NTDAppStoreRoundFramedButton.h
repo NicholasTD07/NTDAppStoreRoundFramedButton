@@ -6,8 +6,14 @@
 //  Copyright (c) 2014 Nicholas Tian. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface NTDAppStoreRoundFramedButton : NSObject
+@interface NTDAppStoreRoundFramedButton : UIButton
+
+- (void)setTitleFont:(UIFont *)font;
+- (void)setCornerRadius:(CGFloat)radius borderWidth:(CGFloat)width borderColor:(UIColor *)color;
+
+- (void)setTopAndBottomEdgeInset:(CGFloat)inset;
+- (void)setLeftAndRightEdgeInset:(CGFloat)inset;
 
 @end
